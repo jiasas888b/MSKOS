@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <package android:name="com.MSS.MSF2" />
+        <package android:name="com.MSS.MSQR" />
+        <package android:name="com.tencent.mm" />
+        <package android:name="com.tencent.mobileqq" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/msos_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".xtmain"
+            android:exported="false"
+            android:label="系统主页面" />
+        <activity
+            android:name=".infoxtym"
+            android:exported="false"
+            android:label="信息页面" />
+        <activity
+            android:name=".DateCo"
+            android:exported="false"
+            android:label="日期工具页面" />
+        <activity
+            android:name=".calculator"
+            android:exported="false"
+            android:label="计算器页面" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="主题" />
+        <activity
+            android:name=".SettingmainActivity"
+            android:exported="false"
+            android:label="设置" />
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:orientation="vertical"
+     android:id="@+id/root_layout">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="0dp"
+         android:gravity="center"
+         android:textSize="40sp"
+         android:id="@+id/xttitle"
+         android:text="系统主页面" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content">
+
+        <EditText
+             android:layout_height="50dp"
+             android:layout_width="200dp"
+             android:layout_marginBottom="20dp"
+             android:background="@drawable/edittext_xt"
+             android:hint="请输入内容"
+             android:padding="12dp"
+             android:textSize="16sp"
+             android:id="@+id/etInput" />
+
+        <Button
+             android:layout_height="50dp"
+             android:layout_width="100dp"
+             android:background="@drawable/custom_button"
+             android:padding="12dp"
+             android:layout_marginLeft="5dp"
+             android:id="@+id/btnSubmit"
+             android:text="完成" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content">
+
+        <ImageButton
+             android:layout_height="80dp"
+             android:layout_width="80dp"
+             android:layout_marginBottom="30dp"
+             android:scaleType="centerCrop"
+             android:src="@drawable/msc_icon"
+             android:background="@drawable/icon_btn"
+             android:foreground="@drawable/icon_btn_ripple"
+             android:layout_marginRight="30dp"
+             android:id="@+id/msc_launchicon" />
+
+        <ImageButton
+             android:layout_height="80dp"
+             android:layout_width="80dp"
+             android:layout_marginBottom="30dp"
+             android:scaleType="centerCrop"
+             android:src="@drawable/msr_icon"
+             android:background="@drawable/icon_btn"
+             android:foreground="@drawable/icon_btn_ripple"
+             android:id="@+id/msr_launchicon" />
+
+        <ImageButton
+             android:layout_height="80dp"
+             android:layout_width="80dp"
+             android:src="@drawable/dateapp_btn"
+             android:scaleType="centerCrop"
+             android:background="@drawable/icon_btn"
+             android:foreground="@drawable/icon_btn_ripple"
+             android:layout_marginLeft="30dp"
+             android:id="@+id/date_app" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/cal_app"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/icon_btn"
+            android:foreground="@drawable/icon_btn_ripple"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cal_btn" />
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/icon_btn"
+            android:foreground="@drawable/icon_btn_ripple"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:src="@mipmap/settingsicon" />
+
+    </LinearLayout>
+
+    <Button
+         android:layout_height="60dp"
+         android:layout_width="120dp"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/custom_button"
+         android:textSize="14sp"
+         android:id="@+id/click"
+         android:text="返回" />
+
+</LinearLayout>

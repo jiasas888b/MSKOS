@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center_horizontal"
+     android:background="#80CEEB"
+     android:padding="16dp"
+     android:orientation="vertical"
+     tools:context=".DateCoActivity"
+     android:id="@+id/root_layout">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="32sp"
+         android:textColor="#1a3e4c"
+         android:layout_marginTop="80dp"
+         android:text="日期选择"
+         android:textStyle="bold" />
+
+    <DatePicker
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:datePickerMode="spinner"
+         android:background="?android:attr/selectableItemBackgroundBorderless"
+         android:spinnersShown="true"
+         android:layout_marginTop="40dp"
+         android:calendarViewShown="false"
+         android:id="@+id/datePicker">
+
+    </DatePicker>
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:paddingRight="24dp"
+         android:textSize="18sp"
+         android:textColor="#1a3e4c"
+         android:layout_marginTop="32dp"
+         tools:text="📅📅📅📅📅📅 2025年 1月 15日"
+         android:letterSpacing="0.02"
+         android:gravity="center"
+         android:background="@drawable/date_radius"
+         android:paddingBottom="12dp"
+         android:backgroundTint="#80FFD0A0"
+         android:paddingLeft="24dp"
+         android:id="@+id/selectedDateText"
+         android:text="📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅 等待选择..."
+         android:paddingTop="12dp" />
+
+    <TextView
+        android:id="@+id/festivalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/date_radius"
+        android:backgroundTint="#B0FFF0D0"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:paddingLeft="24dp"
+        android:paddingTop="12dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="12dp"
+        android:text="📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉 选择日期查看节日"
+        android:textColor="#1a3e4c"
+        android:textSize="18sp" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:paddingRight="24dp"
+         android:textSize="18sp"
+         android:textColor="#1a3e4c"
+         android:layout_marginTop="16dp"
+         android:letterSpacing="0.02"
+         android:background="@drawable/date_radius"
+         android:gravity="center"
+         android:paddingBottom="12dp"
+         android:backgroundTint="#B0E0FFFF"
+         android:paddingLeft="24dp"
+         android:id="@+id/historyText"
+         android:text="📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅📅🎉📅📅📅📅📅🎉📅📅📅📅📅📅🎉📅📅📅📅📅📅📅🎉📅📅🎉📅📅📅📅📅🎉📅📅🎉📜 历史上的今天"
+         android:paddingTop="12dp" />
+
+</LinearLayout>

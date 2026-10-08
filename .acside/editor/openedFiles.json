@@ -1,0 +1,65 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/Documents/MSOS-AIDE/MSOS6/app/src/main/kotlin/com/example/myno/msos6/xtmain.kt",
+      "selection": {
+        "end": {
+          "column": 20,
+          "index": 82,
+          "line": 3
+        },
+        "start": {
+          "column": 20,
+          "index": 82,
+          "line": 3
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/Documents/MSOS-AIDE/MSOS6/app/src/main/res/layout/infoxtv.xml",
+      "selection": {
+        "end": {
+          "column": 28,
+          "index": 950,
+          "line": 27
+        },
+        "start": {
+          "column": 28,
+          "index": 950,
+          "line": 27
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/Documents/MSOS-AIDE/MSOS6/app/src/main/res/layout/xt_active.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/Documents/MSOS-AIDE/MSOS6/app/src/main/res/drawable/cal_fuhao.xml",
+      "selection": {
+        "end": {
+          "column": 8,
+          "index": 192,
+          "line": 4
+        },
+        "start": {
+          "column": 8,
+          "index": 192,
+          "line": 4
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/Documents/MSOS-AIDE/MSOS6/app/src/main/res/drawable/cal_fuhao.xml"
+}

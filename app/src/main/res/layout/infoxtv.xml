@@ -22,7 +22,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
-        android:text="1.2.0.beta.1"
+        android:text="1.2.0.beta.2"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="14sp" />
@@ -33,7 +33,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
-        android:text="2026.10.4"
+        android:text="2026.10.30"
         android:textColor="#FFFFFF"
         android:textSize="14sp" />
 

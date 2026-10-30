@@ -27,10 +27,6 @@ class infoxtym : AppCompatActivity() {
         rootView.scaleX = scale
         rootView.scaleY = scale
 
-        if (SettingManager.isActivityAffected("infoxtym")) {
-            SettingManager.applySettings(this, rootView)
-        }
-
         // 你原来的按钮
         val msosButton = findViewById<Button>(R.id.msos_ver)
         val versionButton = findViewById<Button>(R.id.version)
@@ -38,21 +34,13 @@ class infoxtym : AppCompatActivity() {
         
         val button = findViewById<Button>(R.id.update_button)
 		button.setOnClickListener {
-    		val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jiasas888/MSKOS/releases"))
+    		val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jiasas888b/MSKOS/releases"))
     			startActivity(intent)
 		}
 
         val backButton = findViewById<Button>(R.id.back)
         backButton.setOnClickListener {
             finish()
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        // 从设置页面返回时刷新UI
-        if (SettingManager.isActivityAffected("infoxtym")) {
-            SettingManager.applySettings(this, rootView)
         }
     }
 

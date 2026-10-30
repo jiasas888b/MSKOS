@@ -125,11 +125,11 @@ class xtmain : AppCompatActivity() {
         }
 
         val mscIcon = findViewById<ImageButton>(R.id.msc_launchicon)
-        if (Build.VERSION.SDK_INT >= 26) {
+        if (Build.VERSION.SDK_INT >= 28) {
             mscIcon.isEnabled = true
             mscIcon.setOnClickListener {
                 try {
-                    val intent = packageManager.getLaunchIntentForPackage("com.MSS.MSF2")
+                    val intent = packageManager.getLaunchIntentForPackage("com.MSS.MSC")
                     if (intent != null) {
                         startActivity(intent)
                     } else {
@@ -142,7 +142,7 @@ class xtmain : AppCompatActivity() {
         } else {
             mscIcon.isEnabled = false
             mscIcon.setOnClickListener {
-                Toast.makeText(this, "游戏需要安卓8.0以上系统", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "游戏需要安卓9.0以上系统", Toast.LENGTH_SHORT).show()
             }
         }
 

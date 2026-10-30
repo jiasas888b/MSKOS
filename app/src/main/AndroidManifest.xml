@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
-        <package android:name="com.MSS.MSF2" />
+        <package android:name="com.MSS.MSC" />
         <package android:name="com.MSS.MSQR" />
         <package android:name="com.tencent.mm" />
         <package android:name="com.tencent.mobileqq" />

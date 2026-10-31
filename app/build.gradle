@@ -20,8 +20,8 @@ android {
         applicationId 'com.example.myno.msos6'
         minSdk 24
         targetSdk 37
-        versionCode 32
-        versionName "1.2.0.beta.2"
+        versionCode 33
+        versionName "1.2.0.beta.2.1"
     }
 
     buildFeatures {

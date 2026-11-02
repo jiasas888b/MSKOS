@@ -1,7 +1,7 @@
 ## MSKOS Support version
 ## MSKOS 1.2
 * release : no stable
-* lastest : 1.2.0.beta.1
+* lastest : 1.2.0.beta.2.1
 ### Maintenance
 * start version : none
 * start in :

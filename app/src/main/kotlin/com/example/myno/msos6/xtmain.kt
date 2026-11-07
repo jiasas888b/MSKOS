@@ -20,25 +20,25 @@ class xtmain : AppCompatActivity() {
 
     private lateinit var rootView: View
 
+    // 英文 key 统一小写；中文 key 保持原样
     private val appMap = mapOf(
         "微信" to "com.tencent.mm",
         "wechat" to "com.tencent.mm",
-        "WeChat" to "com.tencent.mm",
-        "QQ" to "com.tencent.mobileqq",
-        "qq" to "com.tencent.mobileqq"
+        "qq" to "com.tencent.mobileqq",
+        "马帅城市" to "com.MSS.MSC",
+        "mashuai city" to "com.MSS.MSC",
+        "mashuaicity" to "com.MSS.MSC",
+        "马帅快快跑" to "com.MSS.MSQR",
+        "mashuai run" to "com.MSS.MSQR",
+        "mashuairun" to "com.MSS.MSQR"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.xt_active)
 
-        val designWidth = 360f
-        val screenWidth = resources.displayMetrics.widthPixels / resources.displayMetrics.density
-        val scale = minOf(screenWidth / designWidth, 1.75f)
-
         rootView = findViewById<View>(android.R.id.content)
-        rootView.scaleX = scale
-        rootView.scaleY = scale
+        ScreenUtils.applyScale(this)
 
         if (SettingManager.isActivityAffected("xtmain")) {
             SettingManager.applySettings(this, rootView)
@@ -73,9 +73,8 @@ class xtmain : AppCompatActivity() {
         btnSubmit.setOnClickListener {
             val inputText = etInput.text.toString().trim()
 
-            val packageName = appMap[inputText]
-                ?: appMap[inputText.lowercase()]
-                ?: appMap[inputText.uppercase()]
+            // 统一转小写后查询；中文保持不变
+            val packageName = appMap[inputText.lowercase()]
 
             if (packageName != null) {
                 try {
@@ -101,7 +100,7 @@ class xtmain : AppCompatActivity() {
                         Toast.makeText(this, "当前时间：$currentTime", Toast.LENGTH_SHORT).show()
                     }
                     "系统" -> {
-                        Toast.makeText(this, "MSKOS 1", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "MSKOS 1.2", Toast.LENGTH_SHORT).show()
                     }
                     "日历" -> {
                         val intent = Intent(this, DateCo::class.java)

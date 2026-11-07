@@ -18,14 +18,9 @@ class infoxtym : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.infoxtv)  // 用你原来的布局
-        
-        val designWidth = 360f
-        val screenWidth = resources.displayMetrics.widthPixels / resources.displayMetrics.density
-        val scale = minOf(screenWidth / designWidth, 1.75f)
 
         rootView = findViewById<View>(android.R.id.content)
-        rootView.scaleX = scale
-        rootView.scaleY = scale
+        ScreenUtils.applyScale(this)
 
         // 你原来的按钮
         val msosButton = findViewById<Button>(R.id.msos_ver)

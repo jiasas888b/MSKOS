@@ -24,13 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val designWidth = 360f
-        val screenWidth = resources.displayMetrics.widthPixels / resources.displayMetrics.density
-        val scale = minOf(screenWidth / designWidth, 1.75f)
-
         rootView = findViewById<View>(android.R.id.content)
-        rootView.scaleX = scale
-        rootView.scaleY = scale
+        ScreenUtils.applyScale(this)
 
         val tvCurrentTime = findViewById<TextView>(R.id.tvCurrentTime)
         startUpdatingTime(tvCurrentTime)

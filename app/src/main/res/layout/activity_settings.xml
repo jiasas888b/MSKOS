@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:padding="1dp"
-            android:textSize="30sp"
             android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="设置"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="#aaa"
-            android:layout_gravity="left" />
+            android:textColor="#aaa" />
 
         <Button
             android:id="@+id/btnzhuti"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="12dp"
             android:text="主题"
             android:textSize="16sp"
@@ -34,12 +34,13 @@
 
         <Button
             android:id="@+id/btninf"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="500dp"
             android:text="版本信息"
             android:textSize="16sp"
             android:backgroundTint="#999999" />
+
     </LinearLayout>
 
 </LinearLayout>

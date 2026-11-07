@@ -9,6 +9,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.TypedValue
+import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
@@ -19,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SettingsActivity : AppCompatActivity() {
 
+    private lateinit var rootView: View
     private lateinit var previewContainer: FrameLayout
     private lateinit var previewText: TextView
     private lateinit var btnSelectImage: Button
@@ -49,11 +51,26 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_zhuti)
 
+        // 和 xtmain 一致的平板缩放逻辑
+        rootView = findViewById<View>(android.R.id.content)
+        ScreenUtils.applyScale(this)
+
+        if (SettingManager.isActivityAffected("SettingsActivity")) {
+            SettingManager.applySettings(this, rootView)
+        }
+
         sharedPreferences = getSharedPreferences("settings_prefs", MODE_PRIVATE)
 
         initViews()
         setupListeners()
         restoreState()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (SettingManager.isActivityAffected("SettingsActivity")) {
+            SettingManager.applySettings(this, rootView)
+        }
     }
 
     private fun initViews() {
